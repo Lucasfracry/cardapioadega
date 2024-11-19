@@ -19,6 +19,7 @@
   .navbar {
     display: flex;
     background-color: #333;
+    border-bottom: 2px solid black;
   }
 
   .navbar a {
@@ -42,10 +43,12 @@
     background-color: #9c3636;
   }
 
+
   main {
     text-align: center;
     max-width: 900px;
     margin: auto;
+    background-color: white;
   }
 
   main > h1 {
@@ -97,4 +100,12 @@
   footer > a:hover {
     text-decoration: underline;
     color: yellow;
+  }
+
+  .copiar {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 400px;
+    padding: 20px;
   }

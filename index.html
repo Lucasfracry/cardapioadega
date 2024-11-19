@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADEGA PORTUGALIA</title>
     <link rel="stylesheet" href="./style/style.css">
+    <style>
+        button, input {
+            font-size: 25px;
+            border-radius: 10px;
+            border:none;
+            padding: 10px;
+        }
+        input {
+            background-color: #d4e8ff;
+            color: #06224a;
+            width: 200px;
+            text-align: center;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        button {
+            margin-left: 2px;
+            background-color: #06224a;
+            color: white;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #010d1f;
+            transition: 0.3s;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,7 +52,35 @@
       </div>
 </header>
 <main>
-    
+    <div><h1><br></h1></div>
+    <div class="copiar">
+        <h1>Chave Pix para Delivery</h1>
+        <input type="text" name="texto" id="texto" value="11977477557">
+        <button onclick="copiarTexto()">Copiar</button>
+        <script>
+            function copiarTexto() {
+                let textoCopiado = document.getElementById("texto");
+                textoCopiado.select();
+                textoCopiado.setSelectionRange(0, 9999);
+                document.execCommand("copy")
+                alert(`Copiado Chave Pix  ${textoCopiado.value} `);
+            }
+        </script>
+    </div>
+    <div class="copiar">
+        <h1>Mensagem para enviar o Comprovante</h1>
+        <input type="text" name="texto" id="texto" value="Por favor enviar o comprovante pra dar baixa no sistema e liberar a entrega">
+        <button onclick="copiarTexto()">Copiar</button>
+        <script>
+            function copiarTexto() {
+                let textoCopiado = document.getElementById("texto");
+                textoCopiado.select();
+                textoCopiado.setSelectionRange(0, 9999);
+                document.execCommand("copy")
+                alert(`Mensagem copiada com Sucesso`);
+            }
+        </script>
+    </div>
 </main>
 </body>
 </html>
