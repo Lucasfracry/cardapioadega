@@ -53,47 +53,49 @@
 </header>
 <main>
     <div><h1><br></h1></div>
-    <div class="copiar">
-        <h1>Chave Pix para Delivery</h1>
-        <input type="text" name="texto" id="texto" value="11977477557">
-        <button onclick="copiarTexto()">Copiar</button>
-        <script>
-            function copiarTexto() {
-                let textoCopiado = document.getElementById("texto");
-                textoCopiado.select();
-                textoCopiado.setSelectionRange(0, 9999);
-                document.execCommand("copy")
-                alert(`Copiado Chave Pix  ${textoCopiado.value} `);
-            }
-        </script>
-    </div>
-    <div class="copiar">
-        <h1>Mensagem de enviar comprovante</h1>
-        <input type="text" name="textom" id="textom" value="Por favor envar o comprovante pra dar baixa no sistema e liberar a entrega">
-        <button onclick="copiarTextom()">Copiar</button>
-        <script>
-            function copiarTextom() {
-                let textoCopiado = document.getElementById("textom");
-                textoCopiado.select();
-                textoCopiado.setSelectionRange(0, 9999);
-                document.execCommand("copy")
-                alert(`mensagem copiada `);
-            }
-        </script>
-    </div>
-    <div class="copiar">
-        <h1>Chave Pix para Delivery</h1>
-        <input type="text" name="textom" id="textom" value="Por favor envar o comprovante pra dar baixa no sistema e liberar a entrega">
-        <button onclick="copiarTextom()">Copiar</button>
-        <script>
-            function copiarTextom() {
-                let textoCopiado = document.getElementById("textom");
-                textoCopiado.select();
-                textoCopiado.setSelectionRange(0, 9999);
-                document.execCommand("copy")
-                alert(`mensagem copiada `);
-            }
-        </script>
+    <div class="botoes">
+        <div class="copiar">
+            <h1>Chave Pix <br> para Delivery</h1>
+            <input type="text" name="texto" id="texto" value="11977477557">
+            <button onclick="copiarTexto()">Copiar</button>
+            <script>
+                function copiarTexto() {
+                    let textoCopiado = document.getElementById("texto");
+                    textoCopiado.select();
+                    textoCopiado.setSelectionRange(0, 9999);
+                    document.execCommand("copy")
+                    alert(`Copiado Chave Pix  ${textoCopiado.value} `);
+                }
+            </script>
+        </div>
+        <div class="copiar">
+            <h1>Mensagem de enviar comprovante</h1>
+            <input type="text" name="textom" id="textom" value="Por favor envar o comprovante pra dar baixa no sistema e liberar a entrega">
+            <button onclick="copiarTextom()">Copiar</button>
+            <script>
+                function copiarTextom() {
+                    let textoCopiado = document.getElementById("textom");
+                    textoCopiado.select();
+                    textoCopiado.setSelectionRange(0, 9999);
+                    document.execCommand("copy")
+                    alert(`mensagem copiada `);
+                }
+            </script>
+        </div>
+        <div class="copiar">
+            <h1>Mensagem de Agradecimento</h1>
+            <input type="text" name="textoA" id="textoA" value="Muitissimo obrigado pela preferencia! Precisando estamos a sua disposição!">
+            <button onclick="copiarTextoA()">Copiar</button>
+            <script>
+                function copiarTextoA() {
+                    let textoCopiado = document.getElementById("textoA");
+                    textoCopiado.select();
+                    textoCopiado.setSelectionRange(0, 9999);
+                    document.execCommand("copy")
+                    alert(`mensagem copiada `);
+                }
+            </script>
+        </div>
     </div>
 </main>
 </body>
