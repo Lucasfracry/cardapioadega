@@ -68,6 +68,20 @@
         </script>
     </div>
     <div class="copiar">
+        <h1>Mensagem de enviar comprovante</h1>
+        <input type="text" name="textom" id="textom" value="Por favor envar o comprovante pra dar baixa no sistema e liberar a entrega">
+        <button onclick="copiarTextom()">Copiar</button>
+        <script>
+            function copiarTextom() {
+                let textoCopiado = document.getElementById("textom");
+                textoCopiado.select();
+                textoCopiado.setSelectionRange(0, 9999);
+                document.execCommand("copy")
+                alert(`mensagem copiada `);
+            }
+        </script>
+    </div>
+    <div class="copiar">
         <h1>Chave Pix para Delivery</h1>
         <input type="text" name="textom" id="textom" value="Por favor envar o comprovante pra dar baixa no sistema e liberar a entrega">
         <button onclick="copiarTextom()">Copiar</button>
