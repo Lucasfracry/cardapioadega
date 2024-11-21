@@ -1,102 +1,143 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADEGA PORTUGALIA</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <style>
-        button, input {
-            font-size: 25px;
-            border-radius: 10px;
-            border:none;
-            padding: 10px;
-        }
-        input {
-            background-color: #d4e8ff;
-            color: #06224a;
-            width: 200px;
-            text-align: center;
-        }
-
-        input:focus {
-            outline: none;
-        }
-
-        button {
-            margin-left: 2px;
-            background-color: #06224a;
-            color: white;
-            text-transform: uppercase;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            background-color: #010d1f;
-            transition: 0.3s;
-        }
-    </style>
+<title>ADEGA PORTUGALIA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header>
-    <div class="header">
-        <h1>ADEGA PORTUGALIA</h1>
-        <p>Tabacaria e Bebidas</p>
+<!-- Header -->
+<div class="header">
+  <h1>ADEGA PORTUGALIA</h1>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="index.html">INICIO</a>
+  <a href="#">CONTATO</a>
+</div>
+
+<!-- The flexible grid (content) -->
+    <div class="main">
+    <div class="vermais">
+        <h2>Whisky</h2>
+        <h2><a href="./pages/whisky.html" class="vermais_link">Ver todos</a></h2>
     </div>
-    <div class="navbar">
-        <a href="./index.html" class="atual">INÍCIO</a>
-        <a href="./paginas/bebidasnalcoolicas.html">BEBIDAS NÃO ALCOOLICAS</a>
-        <a href="./paginas/tabacaria.html">TABACARIA</a>
-        <a href="./paginas/bebidasalcolicas.html" target="_self">BEBIDAS ALCOOLICAS</a>
-        <a href="./paginas/combos.html">COMBOS</a>
-      </div>
-</header>
-<main>
-    <div><h1><br></h1></div>
-    <div class="botoes">
-        <div class="copiar">
-            <h1>Chave Pix <br> para Delivery</h1>
-            <input type="text" name="texto" id="texto" value="11977477557">
-            <button onclick="copiarTexto()">Copiar</button>
-            <script>
-                function copiarTexto() {
-                    let textoCopiado = document.getElementById("texto");
-                    textoCopiado.select();
-                    textoCopiado.setSelectionRange(0, 9999);
-                    document.execCommand("copy")
-                    alert(`Copiado Chave Pix  ${textoCopiado.value} `);
-                }
-            </script>
+    <div class="categoria">
+        <div class="itens">
+            <img src="./assets/redlabel.jpg" alt="" class="foto-itens">
+            <h3>Red Label</h3>
+            <h4>R$129,90</h4>
         </div>
-        <div class="copiar">
-            <h1>Mensagem de enviar comprovante</h1>
-            <input type="text" name="textom" id="textom" value="Por favor enviar o comprovante pra dar baixa no sistema e liberar a entrega">
-            <button onclick="copiarTextom()">Copiar</button>
-            <script>
-                function copiarTextom() {
-                    let textoCopiado = document.getElementById("textom");
-                    textoCopiado.select();
-                    textoCopiado.setSelectionRange(0, 9999);
-                    document.execCommand("copy")
-                    alert(`mensagem copiada `);
-                }
-            </script>
+        <div class="itens">
+            <img src="../assets/cavalobranco.jpeg" alt="garrafa de white horse" class="foto-itens">
+            <h3>White Horse 1 Lt</h3>
+            <h4>R$89,90</h4>
+          </div>
+          <div class="itens">
+            <img src="../assets/jackdaniels.jpeg" alt="garrafa de jack daniels" class="foto-itens">
+            <h3>Jack Daniels 1 Lt</h3>
+            <h4>R$189,90</h4>
+          </div>
+          <div class="itens">
+            <img src="../assets/Buchanans_12.jpg" alt="garrafa de buchanan's" class="foto-itens">
+            <h3>Buchanan's 1 Lt</h3>
+            <h4>R$189,90</h2>
+          </div>
+          <div class="itens">
+            <img src="../assets/blacklabel.jpeg" alt="garrafa de black label" class="foto-itens">
+            <h3>Black Label 1 Lt</h3>
+            <h4>R$189,90</h4>
+          </div>
+    </div>
+    <div class="vermais">
+        <h2>Vodka</h2>
+        <h2><a href="./pages/whisky.html" class="vermais_link">Ver todos</a></h2>
+    </div>
+    <div class="categoria">
+        <div class="itens">
+            <img src="./assets/smirnoff_vodka.jpeg" alt="garrafa de smirnoff" class="foto-itens">
+            <h3>Smirnoff 1 Lt</h3>
+            <h4>R$49,90</h4>
         </div>
-        <div class="copiar">
-            <h1>Mensagem de Agradecimento</h1>
-            <input type="text" name="textoA" id="textoA" value="Muitissimo obrigado pela preferencia! Precisando estamos a sua disposição!">
-            <button onclick="copiarTextoA()">Copiar</button>
-            <script>
-                function copiarTextoA() {
-                    let textoCopiado = document.getElementById("textoA");
-                    textoCopiado.select();
-                    textoCopiado.setSelectionRange(0, 9999);
-                    document.execCommand("copy")
-                    alert(`mensagem copiada `);
-                }
-            </script>
+        <div class="itens">
+            <img src="./assets/askov.jpeg" alt="Garrafa de Askov" class="foto-itens">
+            <h3>Askov 1 Lt</h3>
+            <h4>R$25,00</h4>
+        </div>
+        <div class="itens">
+            <img src="./assets/absolut_1lt.jpeg" alt="garrafa de absolut" class="foto-itens">
+            <h3>Absolut 1 Lt</h3>
+            <h4>R$99,90</h4>
+        </div>
+        <div class="itens">
+            <img src="./assets/absolut750.jpeg" alt="garrafa de absolut" class="foto-itens">
+            <h3>Absolut 750ml</h3>
+            <h4>R$89,90</h4>
+        </div>
+        <div class="itens">
+            <img src="./assets/cirocnormal.jpeg" alt="garrafa de ciroc" class="foto-itens">
+            <h3>Ciroc 750ml</h3>
+            <h4>R$189,90</h4>
         </div>
     </div>
-</main>
+    <div class="vermais">
+        <h2>Gin</h2>
+        <h2><a href="./pages/whisky.html" class="vermais_link">Ver todos</a></h2>
+    </div>
+    <div class="categoria">
+        <div class="itens">
+            <img src="./assets/tanqueray.jpeg" alt="garrafa de tanqueray" class="foto-itens">
+            <h3>Tanqueray 750ml</h3>
+            <h4>R$139,90</h4>
+        </div>
+        <div class="itens">
+            <img src="./assets/bombay.jpg" alt="garrafa de bombay" class="foto-itens">
+            <h3>Bombay 750ml</h3>
+            <h4>R$139,90</h4>
+        </div>
+        <div class="itens">
+            <img src="./assets/gordons.jpeg" alt="garrafa de gordons" class="foto-itens">
+            <h3>Gordons 750ml</h3>
+            <h4>R$89,90</h4>
+        </div>
+        <div class="itens">
+            <img src="./assets/beefeater.jpeg" alt="garrafa de beefeater" class="foto-itens">
+            <h3>Beefeater 750ml</h3>
+            <h4>R$99,90</h4>
+        </div>
+        <div class="itens">
+            <img src="./assets/rocksgin.jpeg" alt="Garrafa de Rock's" class="foto-itens">
+            <h3>Rocks 1 Lt</h3>
+            <h4>R$39,90</h4>
+        </div>
+    </div>
+    <div class="vermais">
+        <h2>Tabacos</h2>
+        <h2><a href="./pages/whisky.html" class="vermais_link">Ver todos</a></h2>
+    </div>
+    <div class="categoria">
+        <div class="itens">
+            <img src="./assets/hitobacco.jpeg" alt="Tabacco Hi" class="foto-itens">
+            <h3>Hi Tobacco 35g</h3>
+            <h4>R$33,90</h4>
+        </div>
+        <div class="itens">
+            <img src="./assets/sassodourado.jpeg" alt="Tabacco sasso" class="foto-itens">
+            <h3>Sasso Destalado 25g</h3>
+            <h4>R$22,90</h4>
+        </div>
+    </div>
+    <h2>  <br>  <br></h2>
+  </div>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Desenvolvido por <a href="https://github.com/Lucasfracry" class="footer_link" target="_blank" rel="external">Lucas Fracry</a></h2>
+</div>
+
 </body>
 </html>
