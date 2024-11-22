@@ -9,7 +9,7 @@
 /* Style the body */
 body {
   font-family: Arial;
-  margin: 0;
+  margin: auto;
 }
 
 /* Header/logo Title */
@@ -52,9 +52,10 @@ body {
 }
 
 .main2{
-  flex: 70%;
+  flex: auto;
   background-color: white;
   padding: 20px;
+  margin: auto;
 }
 
 /* Footer */
@@ -140,9 +141,60 @@ a:hover {
 
 .foto-itens {
   max-width: 170px;
-  min-width: 170px;
-  min-height: 170px;
   max-height: 170px;
   padding: 5px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .main, .main2 {
+    display: grid;
+    flex-direction: column;
+    max-width: 400px;
+  }
+
+  .vermais {
+    padding-right: 20px;
+    font-size: 0.8em;
+  }
+  
+  .categoria {
+    margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  flex-wrap: wrap;
+  max-width: 400px;
+  justify-content: baseline;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+  .foto-itens {
+    max-width: 100px;
+  }
+
+  .itens > h3, h4 {
+    font-size: 0.5em;
+  }
+
+  .vermais_link {
+    text-decoration: none;
+    color: white;
+    background-color: #06224a;
+    font-size: 0.8em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+	  background:linear-gradient(to bottom, #7892c2 5%, #05254d 100%);
+    padding: 5px;
+	  background-color:#7892c2;
+	  border-radius:10px;
+	  border:1px solid #3056c9;
+	  display:inline-block;
+	  cursor:pointer;
+	  color:#ffffff;
+	  font-family:Arial;
+	  text-decoration:none;
+	  text-shadow:0px 1px 0px #283966;
+    }
+ 
 }
