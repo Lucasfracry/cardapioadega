@@ -174,7 +174,11 @@ a:hover {
   }
 
   .itens > h3, h4 {
-    font-size: 0.5em;
+    font-size: 0.7em;
+    display: inline;
+    padding-left: 4px;
+    padding-right: 4px;
+    break-before: auto;
   }
 
   .vermais_link {
